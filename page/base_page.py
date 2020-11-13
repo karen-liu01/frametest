@@ -5,7 +5,7 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
-from jsf_interface.tools.handle_black import handle_black
+from frametest.tools.handle_black import handle_black
 
 
 class BasePage:
@@ -22,7 +22,7 @@ class BasePage:
     basic_data = []
     # 处理异常需要的参数
     # black_list 的第一个参数是页面的顶部位置，点一下防止页面遮挡； 第二个是弹框的位置确认按钮  第三个是弹框的X按钮
-    black_list = [(By.XPATH, "/html/body/div[2]/h4"), (By.CSS_SELECTOR, ".l-btn-text"), (By.CSS_SELECTOR, ".panel-tool-close") ]
+    black_list = [(By.XPATH, "/html/body/div[2]/h4") ]
     error_num = 0
     max_num = 5
 
