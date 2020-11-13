@@ -1,6 +1,6 @@
 import pytest
-from jsf_interface.page.easy_test_page import EasyTestPage
-from jsf_interface.tools.deal_yaml import get_datas
+from frametest.page.easy_test_page import EasyTestPage
+from frametest.tools.deal_yaml import get_datas
 
 
 class TestEasy:
