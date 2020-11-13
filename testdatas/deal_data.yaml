@@ -1,0 +1,63 @@
+#不加- 是字典，加了是列表
+#a: 接口名称在文件中是确定的，可以不占用key
+# 格式：别名：方法名：用例名称：{参数，预期结果}
+b:
+  # 第一个方法
+  k1:
+    ids_name:
+      - "normal"
+      - "params_checkout_a"
+      - "error_code_checkout"
+     request_data:
+      - {"aaa":"111"}
+      - {}
+      - {"bbb":"222"}
+    expect:
+      - {"code": 0}
+      - {"code": 0}
+      - {"code": 0}
+
+  # 第二个方法
+  k2:
+    ids_name:
+      - "normal"
+      - "params_checkout_a"
+      - "error_code"
+     request_data:
+      - {"aaa":"111"}
+      - {}
+      - {"bbb":"222"}
+    expect:
+      - {"code": 0}
+      - {"code": 0}
+      - {"code": 0}
+
+  # 第三个方法
+  k3:
+    ids_name:
+      - "normal"
+      - "params_checkout"
+      - "error_code"
+    request_data:
+      - {"aaa":"111"}
+      - {}
+      - {"bbb":"222"}
+    expect:
+      - {"code": 0}
+      - {"code": 0}
+      - {"code": 0}
+
+  # 第四个方法
+  k4:
+    ids_name:
+      - "normal"
+      - "params_checkout"
+      - "error_code"
+    request_data:
+      - {"aaa":"111"}
+      - {}
+      - {"bbb":"222"}
+    expect:
+      - {"code": 0}
+      - {"code": 0}
+      - {"code": 0}
