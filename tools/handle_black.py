@@ -9,7 +9,7 @@ def handle_black(func):
     # @wraps  如果装饰这个会报错
     def wrapper(*args, **kwargs):
         # 需要内部引入，否则到了basepage界面又需要引入handle_black，会报错循环引入
-        from jsf_interface.page.base_page import BasePage
+        from frametest.page.base_page import BasePage
         # instances是第一个参数self，也就是加了装饰器的函数func的对象本身
         instance: BasePage = args[0]
         try:
